@@ -1,16 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# display group 
 import sys
 import math
 import MeCab
 
-# ysm = [['Excuse','me',',','but','I','must','be','going','now','.']]
-# yst = [['Excuse','me',',','I','must','be','going','now','.']]
-# ysm = [['今日','は','よい','天気','です']]
-# yst = [['昨日','は','悪い','日','でし','た']]
-# yst = [['今日','は','よい','天気','です']]
-# ysm = open('nyan.txt').read().replace('\n',' ').strip().split()
-# yst = open('nyan2.txt').read().replace('\n',' ').strip().split()
 def tsize(ysm):
     ysm = ["".join(ys) for ys in ysm]
     tmp = {}
@@ -101,10 +95,7 @@ def main(argv):
         ]
     ]
     ysm = open(argv[1]).read().replace(" ", "").strip().split("\n")
-    #print("BLEU : " + str(bleu(ysml, ysrl, 4)))
-    #print("一致率 : " + str(match(ysm, ysr)))
     tsize(ysm)
-    #print("種類数 : " + str(tsize(ysm)))
 
 
 if __name__ == "__main__":

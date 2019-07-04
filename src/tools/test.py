@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# testing output using trained model 
+# BLEU,and so on
 import sys
 import math
 import MeCab
