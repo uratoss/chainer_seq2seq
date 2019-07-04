@@ -1,0 +1,14 @@
+data/*
+loss/*
+test/*
+!.gitkeep
+model/*
+!model/attention/
+!model/nstep/
+!model/hred/
+model/attention/*
+model/nstep/*
+model/hred/*
+!model/attention/.gitkeep
+!model/nstep/.gitkeep
+!model/hred/.gitkeep
