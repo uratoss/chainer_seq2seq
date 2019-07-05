@@ -25,7 +25,7 @@ L--src : some learning and generating codes
 ```
 In src directory,details are given as under.
  - hogehoge_generating.py
-   - generate sequence using models was trained by hogehoge
+   - output sequence using models was trained by hogehoge
  - nsteplstm.py
    - normal seq2seq using nsteplstm
  - gbatt.py
@@ -34,10 +34,10 @@ In src directory,details are given as under.
    - hred model
    
 ## Usage
-1. install `mecab, numpy,chainer, chainermn,and so on` for your machine 
+1. install `mecab, numpy, chainer, chainermn, cupy, MPI, NCCL, CUDA, and so on` for your machine 
+ - sorry if not enough
 2. You have to place data-set for data directry  
-file name is `en_hoge` or `ja_hogehoge`.  
-`en` is input data,and `ja` is trainig data.
+Name input data as `en`,and name trainig data as `ja`
 ```
 (data)
 |
@@ -47,5 +47,5 @@ file name is `en_hoge` or `ja_hogehoge`.
 |
 +--{en,ja}_test.txt : data using test for model
 ```
-3. Using `tools/mkvocab.py`,you make vocabulary of your data-set
+3. Using `tools/mkvocab.py`,you make vocabulary data of your data-set
 4. Starting learn by run learning codes
